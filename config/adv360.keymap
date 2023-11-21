@@ -43,6 +43,15 @@
     macros {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Delete_Word {
+            bindings = <&kp LA(DELETE)>;
+            key-positions = <31 16>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
