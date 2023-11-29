@@ -27,26 +27,6 @@
             bindings = <&kp RET>;
         };
 
-        mac_delete_word: mac_delete_word {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp LEFT>,
-                <&macro_release>,
-                <&kp LEFT_ALT>,
-                <&macro_press>,
-                <&kp LEFT_ALT &kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp RIGHT &kp BACKSPACE>,
-                <&macro_release>,
-                <&kp LEFT_ALT &kp LEFT_SHIFT>;
-
-            label = "MAC_DELETE_WORD";
-        };
-
         #endif
 
         hm: homerow_mods {
@@ -61,6 +41,25 @@
     };
 
     macros {
+        mac_delete_word: mac_delete_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+            <&macro_press>,
+            <&kp LEFT_ALT>,
+            <&macro_tap>,
+            <&kp LEFT>,
+            <&macro_release>,
+            <&kp LEFT_ALT>,
+            <&macro_press>,
+            <&kp LEFT_ALT &kp LEFT_SHIFT>,
+            <&macro_tap>,
+            <&kp RIGHT &kp BACKSPACE>,
+            <&macro_release>,
+            <&kp LEFT_ALT &kp LEFT_SHIFT>;
+
+            label = "MAC_DELETE_WORD";
+        };
     };
 
     combos {
