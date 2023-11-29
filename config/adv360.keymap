@@ -66,10 +66,11 @@
     combos {
         compatible = "zmk,combos";
 
-        Delete_Word {
+        combo_delete_word {
             bindings = <&mac_delete_word>;
             key-positions = <31 16>;
             layers = <5>;
+            timeout-ms = <50>;
         };
     };
 
