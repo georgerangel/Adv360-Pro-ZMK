@@ -27,6 +27,13 @@
             bindings = <&kp RET>;
         };
 
+        delete_word_mac: delete_word_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_ARROW) &kp LS(LA(RIGHT_ARROW)) &kp BACKSPACE>;
+            label = "DELETE_WORD_MAC";
+        };
+
         #endif
 
         hm: homerow_mods {
@@ -46,9 +53,10 @@
     combos {
         compatible = "zmk,combos";
 
-        Delete_Word {
-            bindings = <&kp LA(DELETE)>;
+        deletew {
+            bindings = <&delete_word_mac>;
             key-positions = <31 16>;
+            layers = <4>;
         };
     };
 
