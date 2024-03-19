@@ -20,19 +20,7 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        macro_ver: macro_ver {
-            compatible = "zmk,behavior-macro";
-            label = "macro_version";
-            #binding-cells = <0>;
-            bindings = <&kp RET>;
-        };
 
-        delete_word_mac: delete_word_mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LEFT_ARROW) &kp LS(LA(RIGHT_ARROW)) &kp BACKSPACE>;
-            label = "DELETE_WORD_MAC";
-        };
 
         #endif
 
@@ -53,16 +41,18 @@
             #binding-cells = <0>;
             bindings = <&kp LA(LEFT_ARROW) &kp LS(LA(RIGHT_ARROW)) &kp BACKSPACE>;
             label = "DELETE_WORD_MAC";
+            wait-ms = <8>;
         };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        deletew {
+        combo_delete_word_mac {
             bindings = <&delete_word_mac>;
             key-positions = <31 16>;
             layers = <4>;
+            timeout-ms = <800>;
         };
     };
 
