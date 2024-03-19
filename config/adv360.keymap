@@ -48,6 +48,12 @@
     };
 
     macros {
+        delete_word_mac: delete_word_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_ARROW) &kp LS(LA(RIGHT_ARROW)) &kp BACKSPACE>;
+            label = "DELETE_WORD_MAC";
+        };
     };
 
     combos {
