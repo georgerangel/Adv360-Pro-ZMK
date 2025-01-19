@@ -70,22 +70,38 @@
       >;
     };
     extra1 { 
+<<<<<<< HEAD
       display-name = "Red";    
+=======
+      display-name = "Extra";    
+>>>>>>> 76c5e24 (Add Layer names, extra clique layers)
       status = "reserved";
     };
 
     extra2 { 
+<<<<<<< HEAD
       display-name = "Purple";    
+=======
+      display-name = "Extra";    
+>>>>>>> 76c5e24 (Add Layer names, extra clique layers)
       status = "reserved";
     };
 
     extra3 { 
+<<<<<<< HEAD
       display-name = "Cyan";    
+=======
+      display-name = "Extra";    
+>>>>>>> 76c5e24 (Add Layer names, extra clique layers)
       status = "reserved";
     };
 
     extra4 { 
+<<<<<<< HEAD
       display-name = "Yellow";    
+=======
+      display-name = "Extra";    
+>>>>>>> 76c5e24 (Add Layer names, extra clique layers)
       status = "reserved";
     };
   };
